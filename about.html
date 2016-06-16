@@ -65,37 +65,46 @@
       color: white;
     }
     #header {
-      background-color:black;
-      color:white;
-      text-align:center;
-      padding:5px;
+      background: url(http://i.imgur.com/awbuIB5.png);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      max-width: 1000px;
+    }
+    #contain {
+      max-width: 1000px;
     }
     #nav {
-      line-height:30px;
-      background-color:#eeeeee;
-      height:300px;
-      width:100px;
-      float:left;
-      padding:5px;
+      line-height: 30px;
+      background-color: #eeeeee;
+      height: 300px;
+      width: 100px;
+      float: left;
+      padding: 5px;
     }
     #section {
-      width:350px;
-      float:left;
-      padding:10px;
+      width: 350px;
+      float: left;
+      padding: 10px;
     }
     #footer {
-     background-color:black;
-      color:white;
-      clear:both;
-      text-align:center;
-      padding:5px;
+     background-color: black;
+      color: white;
+      clear: both;
+      text-align: center;
+      padding: 5px;
     }
   </style>
 </head>
 <body class="text">
   <div id="header">About Me</div>
-  <div id="nav">me</div>
-  <div id="section">I live in Ohio</div>
-  <div id="footer">footer</div>
+  <div id="contain">
+    <div id="nav">me</div>
+    <div id="section">I live in Ohio</div>
+    <div class="middle">
+      <a href="index.html"><button class="button button1">Home</button></a>
+      <a href="contact.html"><button class="button button1">Contact Me</button></a>
+    </div>
+  </div>
 </body>
 </html>
