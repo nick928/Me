@@ -16,13 +16,19 @@
       margin-right: auto;
       max-width: 800px;
     }
-    .element-container{
+    .element-container {
       width:100%;
       max-width: 700px;
       margin: 0px auto;
     }
+    #container {
+      font-size: 0;
+    }
+    #container > div {
+      font-size: 20px; display: inline-block;
+    }
     .element{
-      font-size: 0px;
+      font-size: 20px;
       width: 80%;
       max-width: 700px;
       height: auto;
@@ -79,7 +85,7 @@
 </head>
 <body>
   <div class="element-container">
-    <div class="element">
+    <div id="container" class="element">
       <div class="top">
         <h1>Nick Shaw</h1>
         <h3>web design</h3>
@@ -88,7 +94,7 @@
           <a href="#panel3"><button class="button button1">Contact Me</button></a>
       </div>
     </div>
-    <div class="element">
+    <div id="container" class="element">
           <div class="panelContainer">
             <div class="home" id="panel1">
               <p>Home</p>
