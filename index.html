@@ -16,6 +16,17 @@
       margin-right: auto;
       max-width: 800px;
     }
+    .element-container{
+      width:100%;
+      max-width: 700px;
+      margin: 0px auto;
+    }
+    .element{
+      width: 80%;
+      max-width: 700px;
+      height: auto;
+      margin-left: 10%;
+    }
     .button {
       font-family: 'Righteous', cursive;
       background-color: #4CAF50;
@@ -66,23 +77,25 @@
   </style>
 </head>
 <body>
-  <div class="top">
-    <h1>Nick Shaw</h1>
-    <h3>web design</h3>
-      <a href="#panel1"><button class="button button1">Home</button></a>
-      <a href="#panel2"><button class="button button1">About Me</button></a>
-      <a href="#panel3"><button class="button button1">Contact Me</button></a>
-  </div>
-      <div class="panelContainer">
-        <div class="home" id="panel1">
-          <p>Home</p>
-        </div>
-        <div class="about" id="panel2">
-        <p>About Me</p>
-        </div>
-        <div class="contact" id="panel3">
-        <p>Contact Me</p>
-        </div>
+  <div class="element-container">
+      <div class="top">
+        <h1>Nick Shaw</h1>
+        <h3>web design</h3>
+          <a href="#panel1"><button class="button button1">Home</button></a>
+          <a href="#panel2"><button class="button button1">About Me</button></a>
+          <a href="#panel3"><button class="button button1">Contact Me</button></a>
       </div>
+          <div class="panelContainer">
+            <div class="home" id="panel1">
+              <p>Home</p>
+            </div>
+            <div class="about" id="panel2">
+              <p>About Me</p>
+            </div>
+            <div class="contact" id="panel3">
+              <p>Contact Me</p>
+            </div>
+          </div>
+  </div>
 </body>
 </html>
