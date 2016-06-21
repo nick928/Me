@@ -59,12 +59,27 @@
       padding: 6px 10px;
       text-decoration: none;
     }
-    input[type=text] {
-      width: 500px;
-      padding: 6px 10px;
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
       margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
       box-sizing: border-box;
-      border: 2px #004666;
+    }
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
     }
     .workpic {
       display: inline;
@@ -261,16 +276,15 @@
         <br>
         <h4>LET'S WORK TOGETHER</h4>
       </div>
-      <div id="form">
-        <form>
-          <ul>
-            <li>Name</li>
-            <li><input type="text" name="name"></li>
-            <li>Email Address</li>
-            <li><input type="text" name="email"></li>
-            <li>Tell Me About Your Project</li>
-            <li><input type="text" name="project"></li>
-          </ul>
+      <div class="small" id="form">
+        <form action="action_page.php">
+          <label for="name">Nname</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email">
+          <label for="project">Tell Me About Your Project</label>
+          <input type="text" id="project" name="project">
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
