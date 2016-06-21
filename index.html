@@ -24,6 +24,33 @@
       border-width: 12px;
       border-color: white;
     }
+    h3 {
+      text-align: center;
+      font-size: 125%;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: right;
+    }
+    li h3 {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 20px 12px;
+      text-decoration: none;
+    }
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 20px 12px;
+      text-decoration: none;
+    }
     #container {
       border-style: solid;
       border width: 1px;
@@ -37,6 +64,7 @@
       height: 500px;
     }
     #nav {
+      float: right;
       font-family: 'Titillium Web', sans-serif;
       height: 200px;
     }
@@ -73,7 +101,12 @@
   <div id="container">
     <div id="header">
       <div id="nav">
-        
+        <ul>
+          <li><a href="#contact"><h3>Contact</h3></a></li>
+          <li><a href="#clients"><h3>Clients</h3></a></li>
+          <li><a href="#work"><h3>Work</h3></a></li>
+          <li><a href="#about"><h3>About Me</h3></a></li>          
+        </ul>
       </div>
       <div id="name">
         <h1>Nick Shaw</h1>
